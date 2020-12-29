@@ -1,2 +1,2 @@
 # config
-My config and dot files
+config and dot files
