@@ -1,4 +1,4 @@
-colorscheme zellner
+"colorscheme zellner
 
 filetype plugin indent on
 
@@ -22,6 +22,8 @@ set hidden
 set title
 set lazyredraw
 set showmatch
+set fillchars=""
+set paste
 
 map <up> <nop>
 map <down> <nop>
