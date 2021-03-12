@@ -21,8 +21,7 @@ bind '"\eOA": history-search-backward'
 bind '"\eOB": history-search-forward'
 
 # Alias
-alias ls='ls --color=auto'
-alias ll='ls -lh'
+alias ls='ls -lah --color=auto'
 alias vi="vim"
 alias vim="vim"
 alias gf="git fetch"
@@ -31,6 +30,8 @@ alias gs="git status"
 alias du="du -h -d1"
 alias df="df -h"
 alias tig="tig --no-merges"
+alias pac_update="sudo pacman -Syu; sudo pacman -Rsn $(pacman -Qdtq)"
+alias pac_search="pacman -Ss"
 
 # Functions
 parse_git_branch() {
@@ -39,7 +40,7 @@ parse_git_branch() {
 
 vpn_start() {
 	sudo snx -d 
-	sudo snx -s vpnpt.fabamaq.com -u alexandre.goncalves
+	sudo snx 
 }
 
 function extract {
